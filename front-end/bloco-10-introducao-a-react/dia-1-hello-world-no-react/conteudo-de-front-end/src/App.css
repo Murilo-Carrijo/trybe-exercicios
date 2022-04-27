@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #232946;
+}
+
+.header {
+  color: #fffffe;
+  text-align: center;
+}
+
+.content {
+  background: url("https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/777463/clojurescript-tutorial-react-front-end-654b0d95bd177c9ea6ca3ad9e528de91.png") center/cover;
+  color: #121629;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.card-content {
+  background-color: #232946;
+  border-radius:20px;
+  box-shadow: 0px 2px 18px #232946;
+  height: 250px;
+  width: 350px;
+  margin: 14px;
+}
+
+h4 {
+  
+  color: #fffffe;
+  text-align: center;
+}
+
+.card-content-text {
+  margin-bottom: 0px;
+  background-color: #fffffe;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  height: 60%;
+}
+
+p {
+  color: #232946;
+  padding: 14px;
+}
+
+.footer {
+  color: #fffffe;
+  text-align: center;
+  border-radius: 0px 20px;
+}
