@@ -6,7 +6,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="title">Pokedex</h1>
+        <div className="title"></div>
         <Pokedex />
       </div>
     );
