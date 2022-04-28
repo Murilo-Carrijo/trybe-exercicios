@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.title {
+  height: 900px;
+  background: url("https://nintendoboy.com.br/wp-content/uploads/2019/10/pokemon-logo-656x409.jpg") center/cover;
+}
+
+.container {
+  background-color: #cfcfcf;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 32px;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.container-pokemon {
+  background-color: #fffe;
+  box-shadow: 0px 1px 18px #0d0d0d;
+  border-radius: 20px;
+  display: flex;
+  height: 250px;
+  margin-left: 16px;
+  margin-top: 16px;
+  width: 500px;
+}
+
+.container-pokemon:hover {
+  box-shadow: 0px 1px 18px #ff8e3c;
+  border-radius: 20px;
+  display: flex;
+  height: 250px;
+  margin-left: 16px;
+  width: 500px;
+}
+
+.container-pokemon-info {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+p {
+  margin-top: 8px;
+  padding-bottom: 16px;
+}
+
+img {
+  width: 50%;
+}
