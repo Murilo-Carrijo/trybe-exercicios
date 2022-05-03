@@ -1,0 +1,88 @@
+.forms {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.container-personal-data {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  width: 40%;
+}
+
+.name {
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.email {
+  width: 100%;
+}
+
+.cpf {
+  width: 100%;
+}
+
+.endereco {
+  width: 100%;
+}
+
+.container-endereco {
+  flex-wrap: wrap;
+}
+
+.cidade {
+  width: 80%;
+  margin-right: 32px;
+  margin-bottom: 8px;
+}
+
+.estado {
+  height: 20px;;
+  width: 76px;
+}
+
+.last-job {
+    height: 150px;
+    width: 100%;
+}
+
+.cargo {
+  height: 30px;
+  width: 100%;
+}
+
+.descricao {
+  height: 75px;
+  width: 100%;
+}
+
+.button {
+  background-color: #6246ea;
+  color: #fffffe;
+  font-weight: bold;
+  height: 30px;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #fffffe;
+  color: #6246ea;
+  font-weight: bold;
+  height: 30px;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.impressao {
+  /* visibility: hidden; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  width: 40%;
+}
+
+
