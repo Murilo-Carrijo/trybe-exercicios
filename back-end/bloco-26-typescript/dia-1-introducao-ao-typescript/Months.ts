@@ -1,4 +1,4 @@
-enum Moths {
+enum Months {
   JANEIRO = 1,
   FEVEREIRO,
   MARÇO,
@@ -12,3 +12,5 @@ enum Moths {
   NOVEMBRO,
   DEZEMBRO,
 };
+
+export default Months;
