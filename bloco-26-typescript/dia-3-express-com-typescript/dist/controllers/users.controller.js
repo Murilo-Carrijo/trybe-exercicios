@@ -18,7 +18,14 @@ class UsersController {
     constructor() {
         this.getAll = (_req, res) => __awaiter(this, void 0, void 0, function* () {
             const users = yield this.usersService.getAll();
-            res.status(http_status_codes_1.StatusCodes.OK).json(users);
+            return res.status(http_status_codes_1.StatusCodes.OK).json(users);
+        });
+        this.getById = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            const id = Number(req.params.id);
+            const user = yield this.usersService.getById(id);
+            if (!user)
+                res.status(http_status_codes_1.StatusCodes.NOT_FOUND).json({ message: 'User not found' });
+            return res.status(http_status_codes_1.StatusCodes.OK).json(user);
         });
         this.usersService = new users_service_1.default();
     }

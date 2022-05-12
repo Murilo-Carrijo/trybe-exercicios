@@ -21,5 +21,14 @@ class UsersModel {
             return rows;
         });
     }
+    getById(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const result = yield this.connection
+                .execute('SELECT * FROM Users WHERE id=?;', [id]);
+            const [rows] = result;
+            const [user] = rows;
+            return user;
+        });
+    }
 }
 exports.default = UsersModel;

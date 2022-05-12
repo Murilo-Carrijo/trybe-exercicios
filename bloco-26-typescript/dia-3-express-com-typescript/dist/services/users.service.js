@@ -24,6 +24,12 @@ class UsersService {
             return users;
         });
     }
+    getById(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const user = yield this.model.getById(id);
+            return user;
+        });
+    }
 }
 ;
 exports.default = UsersService;
