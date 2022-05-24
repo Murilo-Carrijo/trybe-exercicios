@@ -30,6 +30,33 @@ class UsersService {
             return user;
         });
     }
+    add(user) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const { email } = user;
+            const checkEmail = yield this.model.getByEmail(email);
+            if (checkEmail)
+                return false;
+            const newUser = yield this.model.add(user);
+            return newUser;
+        });
+    }
+    update(id, user) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const chekUser = yield this.model.getById(id);
+            if (!chekUser)
+                return false;
+            const updateUser = yield this.model.update(id, user);
+            return updateUser;
+        });
+    }
+    exclude(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const chekUser = yield this.model.getById(id);
+            if (!chekUser)
+                return false;
+            yield this.model.exclude(id);
+        });
+    }
 }
 ;
 exports.default = UsersService;

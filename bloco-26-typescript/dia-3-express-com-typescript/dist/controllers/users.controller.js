@@ -27,6 +27,29 @@ class UsersController {
                 res.status(http_status_codes_1.StatusCodes.NOT_FOUND).json({ message: 'User not found' });
             return res.status(http_status_codes_1.StatusCodes.OK).json(user);
         });
+        this.add = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            const dataNewUser = req.body;
+            const newUser = yield this.usersService.add(dataNewUser);
+            if (newUser === false)
+                return res.status(http_status_codes_1.StatusCodes.BAD_REQUEST).json({ message: 'Email já cadastrado' });
+            return res.status(http_status_codes_1.StatusCodes.CREATED).json(newUser);
+        });
+        this.update = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            const dataUpdateUser = req.body;
+            const id = Number(req.params.id);
+            const newUser = yield this.usersService.update(id, dataUpdateUser);
+            if (newUser === false) {
+                return res.status(http_status_codes_1.StatusCodes.NOT_FOUND).json({ message: 'User not found' });
+            }
+            return res.status(http_status_codes_1.StatusCodes.CREATED).json(newUser);
+        });
+        this.exclude = (req, res) => __awaiter(this, void 0, void 0, function* () {
+            const id = Number(req.params.id);
+            const exUser = yield this.usersService.exclude(id);
+            if (exUser === false)
+                return res.status(http_status_codes_1.StatusCodes.NOT_FOUND).json({ message: 'User not found' });
+            return res.status(http_status_codes_1.StatusCodes.OK).json({ message: 'Usuario excluido com sucesso' });
+        });
         this.usersService = new users_service_1.default();
     }
 }

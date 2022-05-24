@@ -30,5 +30,39 @@ class UsersModel {
             return user;
         });
     }
+    add(user) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const { name, email, password } = user;
+            const result = yield this.connection
+                .execute('INSERT INTO Users (name, email, password) VALUE (?, ?, ?);', [name, email, password]);
+            const [dataInserted] = result;
+            const { insertId } = dataInserted;
+            return Object.assign({ id: insertId }, user);
+        });
+    }
+    update(id, user) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const { name, email, password } = user;
+            yield this.connection
+                .execute('UPDATE Users SET name=?, email=?, password=? WHERE id=?;', [name, email, password, id]);
+            return {
+                id, name, email, password
+            };
+        });
+    }
+    getByEmail(email) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const result = yield this.connection
+                .execute('SELECT * FROM Users WHERE email=?;', [email]);
+            const [rows] = result;
+            const [user] = rows;
+            return user;
+        });
+    }
+    exclude(id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.connection.execute('DELETE FROM Users WHERE id=?;', [id]);
+        });
+    }
 }
 exports.default = UsersModel;
