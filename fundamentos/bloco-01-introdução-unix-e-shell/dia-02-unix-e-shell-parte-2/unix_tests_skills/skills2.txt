@@ -1,0 +1,7 @@
+Internet
+Unix e Bash
+Git e Github
+HTML
+CSS
+JAVASCRIPT
+Metodologia Agil

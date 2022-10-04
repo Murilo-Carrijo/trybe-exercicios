@@ -1,0 +1,88 @@
+1 - Crie a pasta unix_tests_skills e navegue até ela.
+
+  Resposta:
+  
+  mkdir unix_tests-skills
+  cd unix_tests-skills
+
+2 - Crie um arquivo texto pelo terminal com o nome skills2.txt e adicione os valores Internet, Unix e Bash, um em cada linha.
+
+  Resposta:
+  
+  cat > skills2.txt
+  Internet
+  Unix e Bash
+  ctrl d
+
+3 - Adicione mais 5 itens à sua lista de skills e depois imprima a lista ordenada no terminal. 🤓
+
+  Resposta:
+  
+  cat >> skills2.txt
+  Git e Github
+  HTML
+  CSS
+  JAVASCRIPT
+  Metodologia Agil
+  ctrl d
+  
+  sort < skills2.txt
+
+  
+4 - Conte quantas linhas tem o arquivo skills2.txt.
+
+  Resposta:
+  
+  wc -l skills2.txt
+  
+5 - Crie um arquivo chamado top_skills.txt usando o skills2.txt, contendo as 3 primeiras skills em ordem alfabética.
+
+  Resposta:
+  
+  sort < skills2.txt | head -n 3 > top_skills.txt
+  
+6 - Crie um novo arquivo chamado phrases2.txt pelo terminal e adicione algumas frases de sua escolha.
+
+  Resposta:
+  
+  cat > phrases2.txt
+  Sou um profissional formado em administração de empresas que se apaixonou pela área de desenvolvimento de software durante uma automação de relatórios, e que agora vive uma transição de carreira.
+  O meu propósito é impactar positivamente a experiência dos usuários que utilizam as aplicações em que eu trabalho e garantir a melhoria contínua do produto com proatividade, dedicação e inovação.
+  Venho desenvolvendo continuamente as minhas habilidades como desenvolvedor estudando e aplicando as linguagens CSS, HTML, React, MySQL, TypeScript e MongoDB. Além de me manter antenado às atualizações que o mercado apresenta.
+  Minhas experiências profissionais anteriores no setor administrativo foram muito importante para o meu desenvolvimento como profissional pois aprendi a trabalhar em equipe, priorizar atividades, comunicar com a equipe, planejamento estratégico, metodologias ágeis e gerir uma equipe.
+ Estou em busca de uma oportunidade de trabalho que me desafie como desenvolvedor para que eu possa aplicar os meus conhecimentos em prol dos objetivos da empresa e evoluir como pessoa desenvolvedora.
+  ctrl d
+  
+7 - Conte o número de linhas que contêm as letras br.
+
+  Resposta:
+  
+  grep br phrases2.txt | wc -l
+  
+8 - Conte o número de linhas que não contêm as letras br.
+
+  Resposta:
+  
+  grep -v br phrases2.txt | wc -l
+  
+9 - Adicione dois nomes de países ao final do arquivo phrases2.txt.
+
+  Resposta:
+  
+  cat >> phrases2.txt
+  Brasil
+  Argentina
+  ctrl d
+  
+10 - Crie um novo arquivo chamado bunch_of_things.txt com os conteúdos dos arquivos phrases2.txt e countries.txt
+
+  Resposta:
+  
+  cat phrases2.txt countries.txt > bunch_of_things.txt
+  
+11 - Ordene o arquivo bunch_of_things.txt.
+
+  Resposta:
+  
+  sort -o bunch_of_things.txt bunch_of_things.txt
+ 
