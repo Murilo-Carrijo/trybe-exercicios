@@ -1,0 +1,97 @@
+1 - Crie um novo diretório chamado unix_tests_search e entre nele. 2- Na pasta unix_tests_search, baixe um arquivo com os nomes de todos os países do mundo utilizando o comando curl
+  
+  Resposta: 
+  
+  - mkdir unix_tests_search;
+  - cd unix_tests_search;
+  - curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries";
+
+2 - Mostre todo o conteúdo do arquivo countries.txt na tela.
+  
+  Resposta:
+  
+  - cat countries.txt;
+  
+3 - Mostre o conteúdo de countries.txt, página por página, até encontrar a Zambia.
+
+  Resposta:
+  
+  - less countries.txt;
+  - precione barra se espaço até chegar na última pagina;
+  
+4 - Mostre novamente o conteúdo de countries.txt página por página, mas agora utilize um comando para buscar por Zambia.
+
+  Resposta:
+  
+  - less countries.txt;
+  - /Zambia
+
+5 - Busque por Brazil no countries.txt.
+
+  Resposta:
+  
+  - grep Brazil countries.txt;
+  
+
+6 - Busque novamente por brazil, mas agora utilizando o lower case.
+
+  Resposta:
+  
+    - grep -i brazil countries.txt;
+    
+ 
+7 -  Crie um novo arquivo chamado phrases.txt e adicione algumas frases à sua escolha. Não precisa criar o arquivo pelo terminal.
+
+  Resposta:
+  
+  - cat > phrases.txt; Esse comando cria o arquivo e já abre o mesmo para que possa inserir o conteudo. Para finalizar é só precionar ctrl + z;
+
+8 - Busque pelas frases que não contenham a palavra fox.
+
+  Resposta:
+  
+  - grep -i  'fox' phrases.txt
+
+
+9 - Conte o número de palavras do arquivo phrases.txt.
+
+  Resposta:
+  
+  - wc -w phrases.txt
+
+10 - Conte o número de linhas do arquivo phrases.txt.
+
+  Resposta:
+  
+  - wc -l phrases.txt
+
+11 - Crie os arquivos empty.tbt e empty.pdf.
+
+  Resposta:
+  
+  - mkdir empty.tbt;
+  - mkdir empty.pdf;
+
+12 - Liste todos os arquivos do diretório unix_tests_search.
+
+  Resposta:
+  
+  - ls;
+  
+
+13 - Liste todos os arquivos que terminem com txt.
+
+  Resposta:
+  
+  - ls *txt;
+
+14 - Liste todos os arquivos que terminem com tbt ou txt.
+
+  Resposta:
+  
+  - ls *t?t;
+15 - Acesse o manual do comando ls.
+
+  Resposta:
+  
+  - man ls;
