@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+* {
+  background-color: rgb(83, 85, 100);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  background-color: rgb(46, 47, 62);
+  border-bottom-style: double;
+  color: rgb(255, 255, 254);
+  padding: 16px;
+  text-align: center;
+}
+
+.header-container h1, a {
+  background-color: rgb(46, 47, 62);
+}
+
+.link-header {
+  color: rgb(255, 255, 254);
+  margin: 16px;
+  text-decoration: underline;
+}
+
+main {
+  background-color: rgb(15, 14, 23);
+  border-radius: 8px;
+  color: rgb(167, 169, 190);
+  margin: auto;
+  padding: 48px;
+  text-align: center;
+  width: 80%;
+}
+
+.perfil-image {
+  border-radius: 4px;
+  padding: 2px;
+  width: 200px;
+}
+
+.perfil-image:hover {
+  border-radius: 4px;
+  padding: 2px;
+  width: 200px;
+}
+
+.who-am-I {
+  background-color: rgb(15, 14, 23);
+  font-size: 16px;
+  line-height: 40px;
+  margin: auto;
+  padding: 48px;
+  width: 80%;
+}
+
+.who-am-I h2, h3, p {
+  background-color: rgb(15, 14, 23);
+}
+
+.technologies-container {
+  background-color: rgb(255, 255, 254);
+  border-radius: 8px;
+  color: rgb(46, 47, 62);
+  margin: auto;
+  padding: 16px;
+  width: 80%;
+}
+
+.technologies-container h2, ul, li {
+  background-color: rgb(255, 255, 254);
+}
+
+.technologies-list {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 40px;
+  list-style: none;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: rgb(46, 47, 62);
+  border-top-style: double;
+  color: rgb(255, 255, 254);
+  padding: 16px;
+  text-align: center;
+  text-align: center;
+}
+
+footer p {
+  background-color: rgb(46, 47, 62);
+}
