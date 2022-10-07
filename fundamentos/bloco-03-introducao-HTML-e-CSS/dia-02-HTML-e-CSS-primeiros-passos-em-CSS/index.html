@@ -5,18 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portifolio HTML e CSS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="header-container">
     <h1 id="welcome">Bem vindos ao meu Portifolio</h1>
-    <a href="#welcome">Inicio</a>
-    <a href="#who-am-I">Quem sou eu</a>
-    <a href="#technologies">Tecnologias</a>
+    <a href="#welcome" class="link-header">Inicio</a>
+    <a href="#who-am-I" class="link-header">Quem sou eu</a>
+    <a href="#technologies" class="link-header">Tecnologias</a>
   </header>
   <main>
-    <img src="perfil.jpeg" alt="Foto do Perfil"/>
-    <div>
+    <img src="perfil.jpeg" alt="Foto do Perfil" class="perfil-image"/>
+    <div class="who-am-I">
       <h2 id="who-am-I">Quem Sou Eu</h2>
+      <h3>Ola eu sou Murilo H. C. Paulino</h3>
       <p>
         Sou um profissional formado em administração de empresas que se apaixonou pela área de desenvolvimento de software durante uma automação de relatórios, e que agora vive uma transição de carreira.
         O meu propósito é impactar positivamente a experiência dos usuários que utilizam as aplicações em que eu trabalho e garantir a melhoria contínua do produto com proatividade, dedicação e inovação.
@@ -25,16 +27,22 @@
         Estou em busca de uma oportunidade de trabalho que me desafie como desenvolvedor para que eu possa aplicar os meus conhecimentos em prol dos objetivos da empresa e evoluir como pessoa desenvolvedora.
       </p>
     </div>
-    <ul id="technologies">
-      <li>Git</li>
-      <li>Github</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JAVASCRIPT</li>
-    </ul>
+    <div class="technologies-container">
+      <h2>Lista de tecnologias</h2>
+      <ul
+        id="technologies"
+        class="technologies-list"
+      >
+        <li>Git</li>
+        <li>Github</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
   </main>
   <footer>
-    <p>Feito com amor</p>
+    <p>Feito com amor ❤️</p>
   </footer>
 </body>
 </html>
