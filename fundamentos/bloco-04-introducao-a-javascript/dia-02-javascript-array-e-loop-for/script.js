@@ -82,3 +82,9 @@ for (let i = 1; i <= 25; i += 1) {
 }
 
 console.log('Exercício 8:', newArr);
+
+'9 - Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2.'
+
+for (let i = 0; i < newArr.length; i += 1) {
+  console.log('Exercício 9:', `A divisão de ${newArr[i]} por 2 é igual à: ${newArr[i]/2}`);
+}
