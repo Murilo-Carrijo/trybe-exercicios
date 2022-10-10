@@ -38,4 +38,3 @@ let names = ['João', 'Maria', 'Antônio', 'Margarida'];
 for (const name of names) {
     console.log('Exercicio 1 for/of: ', name);
 }
-
