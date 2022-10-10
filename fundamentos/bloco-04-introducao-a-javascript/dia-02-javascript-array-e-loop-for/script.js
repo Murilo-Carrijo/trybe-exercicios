@@ -73,3 +73,12 @@ for (let i = 0; i <= numbers.length; i += 1) {
 }
 
 console.log('Exercício 7:', smallestNumber);
+
+'8 - Utilizando for, crie um array que vá de 1 até 25 e imprima o resultado;'
+
+const newArr = [];
+for (let i = 1; i <= 25; i += 1) {
+  newArr.push(i);
+}
+
+console.log('Exercício 8:', newArr);
