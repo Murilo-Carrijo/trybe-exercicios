@@ -17,3 +17,14 @@ for (number of numbers) {
 }
 
 console.log('Exercício 2', sum);
+
+'3 - Calcule e imprima a média aritmética dos valores contidos no array;'
+  'A média aritmética é o resultado da soma de todos os elementos dividido pelo número total de elementos.'
+
+let sum2 = 0;
+
+for (number of numbers) {
+  sum2 = sum2 + number;
+}
+
+console.log('Exercício 3', sum2/numbers.length);
