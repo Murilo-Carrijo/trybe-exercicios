@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(239, 240, 243);
+  color: rgb(42, 42, 42);
+  font-family: 'Oswald', sans-serif;
+}
+
+.header-container {
+  background-color: rgb(255, 255, 254);
+  height: 48px;
+  padding: 16px;
+  text-align: center;
+}
+
+.link-container {
+  background-color: rgb(42, 42, 42);
+  border-radius: 0 0 4px 4px;
+  height: 24px;
+  text-align: center;
+}
+
+.link-container ul li {
+  color: rgb(239, 240, 243);
+  display: inline-block;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.link-container ul li a {
+  color: rgb(239, 240, 243);
+  text-decoration: underline overline;
+}
+
+.title {
+  background-color: rgb(255, 255, 254);
+  padding: 16px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.sub-title {
+  box-shadow: 0px 4px rgb(13, 13, 13);
+  background-color: rgb(255, 255, 254);
+  text-align: center;
+}
+
+.sub-title h3 {
+  display: inline-block;
+  margin: 16px;
+}
+
+.sub-title ul {
+  display: inline-block;
+}
+
+.sub-title li {
+  display: inline-block;
+  margin: 8px;
+}
+
+.info-container {
+  margin: auto;
+  width: 80%;
+}
+
+.text-section {
+  margin-top: 16px;
+}
+
+.text-section img {
+  border-radius: 8px;
+  float: left;
+  margin: 16px;
+  width: 250px;
+}
+
+.footer-container {
+  background-color: rgb(13, 13, 13);
+  border-radius: 8px 8px 0 0;
+  color: rgb(255, 142, 60);
+  text-align: center;
+}
+
+.name-data {
+  font-weight: bold;
+  text-decoration: underline;
+}
