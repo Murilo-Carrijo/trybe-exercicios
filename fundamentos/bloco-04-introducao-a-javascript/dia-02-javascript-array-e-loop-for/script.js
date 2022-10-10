@@ -63,3 +63,13 @@ if (oddNumbers === 0) {
   console.log('Exercício 6:', oddNumbers);
 }
 
+'7 - Utilizando for, descubra qual o menor valor contido no array e imprima-o;'
+
+let smallestNumber = numbers[0];
+for (let i = 0; i <= numbers.length; i += 1) {
+  if (numbers[i] < smallestNumber) {
+    smallestNumber = numbers[i];
+  }
+}
+
+console.log('Exercício 7:', smallestNumber);
