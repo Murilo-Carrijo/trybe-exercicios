@@ -47,3 +47,19 @@ for (let i = 0; i <= numbers.length; i += 1) {
 }
 
 console.log('Exercício 5:', higherNumber);
+
+'6 - Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”'
+
+let oddNumbers = 0;
+for (let i = 0; i < numbers.length; i += 1) {
+  if (numbers[i] % 2 !== 0) {
+    oddNumbers += 1;
+  }
+}
+
+if (oddNumbers === 0) {
+  console.log('Exercício 6:', 'nenhum valor ímpar encontrado');
+} else {
+  console.log('Exercício 6:', oddNumbers);
+}
+
