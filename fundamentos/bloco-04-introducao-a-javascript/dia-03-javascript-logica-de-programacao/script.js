@@ -54,3 +54,20 @@ for (let index = 1; index < array.length; index++) {
 }
 
 console.log('Exercicio 3:', `maior palavra: ${largerElement} // menor palavra: ${smallerElement}` );
+
+'4 - Um número primo é um número inteiro maior do que 1 que possui somente dois divisores, ou seja, é divisível por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 2 e 50.'
+
+const oddArr = [];
+
+for (let index = 1; index < 50; index += 1) {
+  const square = Math.sqrt(index);
+  if (index === 1 || index === 2) {
+    oddArr.push(index);
+  } else if (index % 2 === 0) {
+    false;
+  } else if (!Number.isInteger(square)) {
+    oddArr.push(index);
+  }
+}
+
+console.log('Exercício 4:', oddArr[oddArr.length - 1]);
