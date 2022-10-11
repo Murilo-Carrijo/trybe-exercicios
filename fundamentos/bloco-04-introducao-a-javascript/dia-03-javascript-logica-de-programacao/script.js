@@ -29,3 +29,28 @@ for (let i = (wordLength - 1); i >= 0 ; i -= 1) {
 }
 
 console.log('Exercício 2:', word);
+
+
+'Considere o array de strings abaixo:'
+
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+
+'3 - Utilize a estrutura de repetição for para escrever dois algoritmos: um que retorne a maior palavra desse array e outro que retorne a menor. Considere o número de caracteres de cada palavra.'
+
+let largerElement = array[0];
+let smallerElement = array[0];
+
+for (let index = 1; index < array.length; index++) {
+  if (largerElement.length < array[index].length) {
+    console.log(array[index]);
+    largerElement = array[index];
+  }
+}
+
+for (let index = 1; index < array.length; index++) {
+  if (smallerElement.length > array[index].length) {
+    smallerElement = array[index];
+  }
+}
+
+console.log('Exercicio 3:', `maior palavra: ${largerElement} // menor palavra: ${smallerElement}` );
