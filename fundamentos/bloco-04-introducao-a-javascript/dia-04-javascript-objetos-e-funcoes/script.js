@@ -27,3 +27,12 @@ for (const key in info) {
 for (const key in info) {
   console.log('Exercício 4:', info[key]);
 }
+
+'5 - Agora, defina um segundo objeto com a mesma estrutura (as mesmas chaves) do primeiro e os seguintes valores: "Tio Patinhas", "Christmas on Bear Mountain, Dell"s Four Color Comics #178", "O último MacPatinhas", "Sim". Então, imprima os valores de cada objeto juntos, de acordo com cada uma das chaves. Valor esperado no console:'
+
+info['personagem'] = info.personagem + ' e ' + 'Tio Patinhas';
+info['origim'] = info.origem + " Christmas on Bear Mountain, Dell's Four Color Comics"
+info['nota'] = info.nota + " e O último MacPatinhas"
+info['recorrente'] = 'Ambos recorrentes';
+
+console.log('Exercício 5:', info);
