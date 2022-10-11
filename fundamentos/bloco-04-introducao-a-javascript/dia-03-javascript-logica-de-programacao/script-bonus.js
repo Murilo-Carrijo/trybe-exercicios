@@ -51,3 +51,29 @@ for (let i = 0; i < n; i += 1) {
   item3 = '';
   position -= 1;
 }
+
+'4 - Depois, faça uma pirâmide com n asteriscos de base:'
+
+'  *  '
+' *** '
+'*****'
+
+let item4 = '';
+
+let midOfMatrix = (n + 1) / 2;
+let controlLeft = midOfMatrix;
+let controlRight = midOfMatrix;
+
+for (let index = 0; index <= midOfMatrix; index += 1) {
+  for (let i = 0; i <= n; i += 1) {
+    if (i > controlLeft && i < controlRight) {
+      item4 = item4 + '*';
+    } else {
+      item4 = item4 + ' ';
+    }
+  }
+  console.log('Exercício 4:',  item4);
+  item4 = '';
+  controlRight += 1;
+  controlLeft -= 1
+};
