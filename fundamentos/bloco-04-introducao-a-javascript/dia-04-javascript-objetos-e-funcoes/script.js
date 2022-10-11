@@ -136,3 +136,20 @@ function ckeckPositionLowestValue(arr) {
 }
 
 ckeckPositionLowestValue(array2);
+
+'12 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.'
+
+const names = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+
+function ckeckBiggestName(names) {
+  let name = names[0];
+  for (let i in names) {
+    if (name.length < names[i].length) {
+      name = names[i];
+    }
+  }
+  console.log('Exercício 12:', name);
+  return name;
+}
+
+ckeckBiggestName(names);
