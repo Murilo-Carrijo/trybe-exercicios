@@ -82,3 +82,19 @@ console.log('Exercício 7:', leitor);
 '8 - Acesse as chaves nome e livrosFavoritos e faça um console.log no seguinte formato: “Julia tem <quantidade> livros favoritos”, onde “<quantidade>” é um número gerado automaticamente pelo seu código.'
 
 console.log('Exercício 8:', leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favorito');
+
+'🚀 Exercícios - funções'
+'9 - Crie uma função que receba uma string e retorne true se for um palíndromo, ou false, se não for.'
+
+function checkPalindrome(word) {
+  for (const key in word) {
+    if (word[key] !== word[(word.length - 1) - key]) {
+      console.log('Exercício 9:', false);
+      return false;
+    }
+  }
+  console.log('Exercício 9:', true);
+  return true;
+}
+
+checkPalindrome('arara')
