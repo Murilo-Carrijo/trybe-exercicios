@@ -21,3 +21,9 @@ console.log('Exercício 2:', info);
 for (const key in info) {
   console.log('Exercício 3:', key);
 }
+
+'4 - Faça um novo for/in, mas agora mostre todos os valores das chaves do objeto. Valor esperado no console:'
+
+for (const key in info) {
+  console.log('Exercício 4:', info[key]);
+}
