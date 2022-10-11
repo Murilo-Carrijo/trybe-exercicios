@@ -97,4 +97,23 @@ function checkPalindrome(word) {
   return true;
 }
 
-checkPalindrome('arara')
+checkPalindrome('arara');
+
+'10 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.'
+
+const array = [2, 3, 6, 7, 10, 1];
+
+function ckeckPositionHighestValue(arr) {
+  let position = 0;
+  let number = 0;
+  
+  for (const key in arr) {
+    if (number < arr[key]) {
+      number = arr[key];
+      position = key;
+    }
+  }
+  console.log('Exircício 10:', position);
+}
+
+ckeckPositionHighestValue(array);
