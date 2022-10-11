@@ -98,3 +98,20 @@ for (let i = 1; i <= middle; i += 1) {
   right += 1;
   console.log('Exercício 5:', outputLine);
 }
+
+'6 - Faça um programa que diz se um número definido numa variável é primo ou não.'
+'Um número primo é um número que só é divisível por 1 e por ele mesmo, ou seja, a divisão dele por quaisquer outros números dá resto diferente de zero.'
+'Dica: você vai precisar de fazer um loop que vá de 0 ao número definido. Além disso, vai precisar fazer uma checagem a cada iteração e armazenar os resultados em algum lugar.'
+
+const number = 11;
+const square = Math.sqrt(number);
+
+if (number === 1 || number === 2) {
+  console.log('Exercício 6:', number + ' é primo.');
+} else if (number % 2 === 0) {
+  console.log('Exercício 6:', number + ' não é primo.');
+} else if (!Number.isInteger(square)) {
+  console.log('Exercício 6:', number + ' é primo.');
+} else {
+  console.log('Exercício 6:', number + ' não é primo.');
+}
