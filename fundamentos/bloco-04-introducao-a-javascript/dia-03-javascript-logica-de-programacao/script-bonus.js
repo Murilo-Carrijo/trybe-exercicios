@@ -16,7 +16,7 @@ for (let index = 0; index < n; index += 1) {
 }
 
 for (let index = 0; index < n; index++) {
-  console.log(item);
+  console.log('Exercíco 1:', item);
 }
 
 '2 - Faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:'
@@ -32,5 +32,22 @@ for (let index = 0; index < n; index++) {
 let item2 = '';
 for (let index = 0; index < n; index += 1) {
   item2 = item2 + '*';
-  console.log(item2);
+  console.log('Exercíco 2:', item2);
+}
+
+'3 - Agora inverta o lado do triângulo. Por exemplo:'
+
+let item3 = '';
+let position = n - 1;
+for (let i = 0; i < n; i += 1) {
+  for (let index = 0; index < n; index += 1) {
+    if (position > index) {
+      item3 = item3 + ' ';
+    } else {
+      item3 = item3 + '*';
+    }
+  }
+  console.log('Exercíco 3:', item3);
+  item3 = '';
+  position -= 1;
 }
