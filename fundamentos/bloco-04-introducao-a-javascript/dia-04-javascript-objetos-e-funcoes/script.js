@@ -117,3 +117,22 @@ function ckeckPositionHighestValue(arr) {
 }
 
 ckeckPositionHighestValue(array);
+
+'11 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.'
+
+const array2 = [2, 4, 6, 7, 10, 0, -3];
+
+function ckeckPositionLowestValue(arr) {
+  let position = 0;
+  let number = arr[0];
+  
+  for (const key in arr) {
+    if (number > arr[key]) {
+      number = arr[key];
+      position = key;
+    }
+  }
+  console.log('Exircício 11:', position);
+}
+
+ckeckPositionLowestValue(array2);
