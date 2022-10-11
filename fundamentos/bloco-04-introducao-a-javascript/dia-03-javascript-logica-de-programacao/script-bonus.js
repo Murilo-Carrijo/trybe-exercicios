@@ -72,8 +72,29 @@ for (let index = 0; index <= midOfMatrix; index += 1) {
       item4 = item4 + ' ';
     }
   }
-  console.log('Exercício 4:',  item4);
+  console.log('Exercício 4:', item4);
   item4 = '';
   controlRight += 1;
   controlLeft -= 1
 };
+
+'5 * Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que o valor de n será sempre ímpar:'
+
+const m = 7;
+let middle = (m + 1) / 2;
+let left = middle;
+let right = middle;
+
+for (let i = 1; i <= middle; i += 1) {
+  let outputLine = '';
+  for (let index = 1; index <= m; index += 1) {
+    if (index == left || index == right || i == middle) {
+      outputLine = outputLine + '*';
+    } else {
+      outputLine += ' ';
+    }
+  }
+  left -= 1;
+  right += 1;
+  console.log('Exercício 5:', outputLine);
+}
