@@ -182,3 +182,18 @@ function integerRepetition(numbers) {
   return contNumber;
 }
 integerRepetition(numbers);
+
+
+'14 - Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.'
+
+const n = 5;
+
+function integerSum(number) {
+  sum = 0;
+  for (let index = 0; index < number; index += 1) {
+    sum = sum + index + 1
+  }
+  console.log('Exercício 14:', sum);
+}
+
+integerSum(n);
