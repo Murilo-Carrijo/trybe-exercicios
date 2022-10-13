@@ -36,7 +36,7 @@ const hello = (nome) => `Olá, ${nome}`
 let nome = 'Ivan';
 console.log('Exercício 3:', hello(nome));
 
-'3 - 🚀 Transforme a função nomeCompleto em uma arrow function;'
+'4 - 🚀 Transforme a função nomeCompleto em uma arrow function;'
 
 // function nomeCompleto(nome, sobrenome) {
 //   return `${nome} ${sobrenome}`
@@ -46,3 +46,21 @@ const nomeCompleto = (nome, sobrenome) => `${nome} ${sobrenome}`;
 let nome1 = 'Ivan';
 let sobrenome = 'Pires';
 console.log('Exercício 4:', nomeCompleto(nome1, sobrenome));
+
+'5 - 🚀 Altere a expressão if/else utilizando ternary operator;'
+
+// const speedCar = (speed) => {
+//   if (speed >= 120) {
+//     return `Você ultrapassou o limite de velocidade`;
+//   } else {
+//     return `Você está na velocidade permitida`;
+//   }
+// };
+
+let speed = 90;
+
+const speedCar = (speed) => (
+  speed >= 120 ? `Você ultrapassou o limite de velocidade` : `Você está na velocidade permitida`
+);
+
+console.log('Exercício 5:', speedCar(speed));
