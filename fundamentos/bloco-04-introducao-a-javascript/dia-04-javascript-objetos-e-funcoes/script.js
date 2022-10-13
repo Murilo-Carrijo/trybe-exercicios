@@ -197,3 +197,27 @@ function integerSum(number) {
 }
 
 integerSum(n);
+
+'15 - Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word. Considere que a string ending sempre será menor que a string word.'
+'checkWord("trybe", "be") - deve retornar true;'
+'checkWord("joaofernando", "fernan") - deve retornar false;'
+
+const word = 'joaofernando';
+const ending = 'fernan';
+
+function checkWord(word, endig) {
+  const start = word.length - endig.length;
+  let cont = 0;
+  for (let i = start; i < word.length; i += 1) {
+    if (word[i] !== endig[cont]) {
+      console.log('Exercício 15:', false);
+      return false;
+    } else {
+      cont = cont + 1;
+    }
+  }
+  console.log('Exercício 15:', true);
+  return true;
+}
+
+checkWord(word, ending);
