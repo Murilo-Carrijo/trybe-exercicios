@@ -10,5 +10,17 @@ const pessoa = {
 pessoa.nome = 'Luna';
 pessoa.idade = 19;
 
-console.log('Nome:', pessoa.nome);
-console.log('Idade:', pessoa.idade);
+console.log('Exercício 1:', 'Nome:', pessoa.nome);
+console.log('Exercício 1:', 'Idade:', pessoa.idade);
+
+'2 - 🚀 Modifique a estrutura das funções a seguir para que elas sejam arrow functions;'
+'🚀 Transforme a função numeroAleatorio em uma arrow function;'
+
+// function numeroAleatorio() {
+//   return Math.random()
+// }
+// console.log(numeroAleatorio());
+
+const numeroAleatorio = () => Math.random();
+
+console.log('Exercício 2:', numeroAleatorio());
