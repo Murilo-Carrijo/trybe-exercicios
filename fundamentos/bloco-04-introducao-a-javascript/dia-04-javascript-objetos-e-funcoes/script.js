@@ -153,3 +153,32 @@ function ckeckBiggestName(names) {
 }
 
 ckeckBiggestName(names);
+
+'13 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.'
+
+const numbers = [2, 3, 2, 5, 8, 2, 3];
+const obj = {};
+function integerRepetition(numbers) {
+  for (let index = 0; index < numbers.length; index++) {
+    const value = numbers[index];
+    if (!obj[value]) {
+      obj[value] = 1;
+    } else {
+      obj[value] = obj[value] + 1;
+    }
+  }
+
+  let contRepetition = 0;
+  let contNumber = 0;
+
+  for (let element in obj) {
+    if (contRepetition < obj[element]) {
+      contRepetition = obj[element];
+      contNumber = element;
+    }
+  }
+
+  console.log('Exercício 13:', contNumber);
+  return contNumber;
+}
+integerRepetition(numbers);
