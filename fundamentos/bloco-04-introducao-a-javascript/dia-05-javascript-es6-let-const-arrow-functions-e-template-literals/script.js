@@ -24,3 +24,14 @@ console.log('Exercício 1:', 'Idade:', pessoa.idade);
 const numeroAleatorio = () => Math.random();
 
 console.log('Exercício 2:', numeroAleatorio());
+
+'3 - 🚀 Transforme a função hello em uma arrow function;'
+
+// function hello(nome) {
+//   return `Olá, ${nome}!`
+// }
+
+const hello = (nome) => `Olá, ${nome}`
+
+let nome = 'Ivan';
+console.log('Exercício 2:', hello(nome));
