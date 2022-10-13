@@ -34,4 +34,15 @@ console.log('Exercício 2:', numeroAleatorio());
 const hello = (nome) => `Olá, ${nome}`
 
 let nome = 'Ivan';
-console.log('Exercício 2:', hello(nome));
+console.log('Exercício 3:', hello(nome));
+
+'3 - 🚀 Transforme a função nomeCompleto em uma arrow function;'
+
+// function nomeCompleto(nome, sobrenome) {
+//   return `${nome} ${sobrenome}`
+// }
+
+const nomeCompleto = (nome, sobrenome) => `${nome} ${sobrenome}`;
+let nome1 = 'Ivan';
+let sobrenome = 'Pires';
+console.log('Exercício 4:', nomeCompleto(nome1, sobrenome));
