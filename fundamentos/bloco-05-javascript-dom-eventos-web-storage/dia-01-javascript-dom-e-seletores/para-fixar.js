@@ -33,5 +33,11 @@
 
 //"Adicione uma classe igual para os dois parágrafos;"
 // "Recupere os seus parágrafos via código JavaScript, usando a função getElementsByClassName;"
+const paragraphs = document.getElementsByClassName("paragraph");
+console.log(paragraphs);
 // "Altere algum estilo do primeiro deles;"
+paragraphs[0].style.color = "red";
 // "Recupere o subtítulo e altere a cor dele usando a função getElementsByTagName."
+const subtitle = document.getElementsByTagName("h4");
+subtitle[0].style.background = "#16161a";
+subtitle[0].style.color = "#94a1b2";
