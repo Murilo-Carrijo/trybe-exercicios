@@ -44,7 +44,11 @@ for (let index = 0; index < arrayNum.length; index += 1) {
     ul.appendChild(newLi);    
 }
 // 9 - Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
-
+for (let index = 0; index < 3; index += 1) {
+    const h3 = document.createElement('h3');
+    h3.innerHTML = 'h3' + index;
+    mainContent.appendChild(h3);
+}
 // Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
 
 // 10 - Adicione a classe title na tag h1 criada;
