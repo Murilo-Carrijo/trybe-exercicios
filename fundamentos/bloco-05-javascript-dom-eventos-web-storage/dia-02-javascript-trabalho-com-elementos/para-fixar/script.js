@@ -9,6 +9,7 @@ primeiroFilhoDoFilho.innerHTML = 'Primeiro Filho do Filho';
 // 4 - Acesse o primeiroFilho a partir de pai.
 const primeiroFilho = pai.firstElementChild;
 // 5 - Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+const primeiroFilho2 = elementoOndeVoceEsta.previousElementSibling;
 // 6 - Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
 // 7 - Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
 // 8 - Agora acesse o terceiroFilho a partir de pai.
