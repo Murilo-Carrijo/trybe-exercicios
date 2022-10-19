@@ -17,3 +17,4 @@ primeiroFilhoDoFilhoDoFilho.id = 'primeiroFilhoDoFilhoDoFilho';
 primeiroFilhoDoFilhoDoFilho.innerHTML = 'primeiroFilhoDoFilhoDoFilho';
 primeiroFilhoDoFilho.appendChild(primeiroFilhoDoFilhoDoFilho);
 //12 - A partir desse filho criado, acesse terceiroFilho.
+const terceiroFilho = primeiroFilhoDoFilhoDoFilho.parentNode.parentNode.nextElementSibling;
