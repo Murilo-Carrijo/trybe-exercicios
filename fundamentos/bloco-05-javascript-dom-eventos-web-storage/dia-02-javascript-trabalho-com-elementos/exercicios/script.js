@@ -52,6 +52,7 @@ for (let index = 0; index < 3; index += 1) {
 // Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
 
 // 10 - Adicione a classe title na tag h1 criada;
+title.className = 'title';
 // 11 - Adicione a classe description nas 3 tags h3 criadas;
 // 12 - Remova a section criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
 // 13 - Centralize a section criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto da section;
