@@ -34,7 +34,6 @@
 //"Adicione uma classe igual para os dois parágrafos;"
 // "Recupere os seus parágrafos via código JavaScript, usando a função getElementsByClassName;"
 const paragraphs = document.getElementsByClassName("paragraph");
-console.log(typeof paragraphs);
 // "Altere algum estilo do primeiro deles;"
 paragraphs[0].style.color = "red";
 // "Recupere o subtítulo e altere a cor dele usando a função getElementsByTagName."
