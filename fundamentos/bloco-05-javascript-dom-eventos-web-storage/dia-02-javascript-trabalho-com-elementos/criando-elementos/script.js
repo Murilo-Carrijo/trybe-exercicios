@@ -10,7 +10,10 @@ const terceiroFilhoDoFilho = document.createElement('section');
 terceiroFilhoDoFilho.id = 'terceiroFilhoDoFilho';
 terceiroFilhoDoFilho.innerHTML = 'terceiroFilhoDoFilho';
 elementoOndeVoceEsta.appendChild(terceiroFilhoDoFilho);
-console.log(elementoOndeVoceEsta);
-
 //11 - Crie um filho para primeiroFilhoDoFilho.
+const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+const primeiroFilhoDoFilhoDoFilho = document.createElement('section');
+primeiroFilhoDoFilhoDoFilho.id = 'primeiroFilhoDoFilhoDoFilho';
+primeiroFilhoDoFilhoDoFilho.innerHTML = 'primeiroFilhoDoFilhoDoFilho';
+primeiroFilhoDoFilho.appendChild(primeiroFilhoDoFilhoDoFilho);
 //12 - A partir desse filho criado, acesse terceiroFilho.
