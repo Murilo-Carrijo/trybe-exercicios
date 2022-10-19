@@ -47,6 +47,8 @@ for (let index = 0; index < arrayNum.length; index += 1) {
 for (let index = 0; index < 3; index += 1) {
     const h3 = document.createElement('h3');
     h3.innerHTML = 'h3' + index;
+    // exercício 11
+    h3.className = 'description';
     mainContent.appendChild(h3);
 }
 // Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
