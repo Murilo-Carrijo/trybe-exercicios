@@ -67,4 +67,5 @@ for (let index = 0; index < elementList.length; index += 1) {
 // 13 - Centralize a section criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto da section;
 rightContent.style.margin = 'auto';
 // 14 - Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
+centerContent.style.backgroundColor = 'green';
 // 15 - Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
