@@ -57,15 +57,15 @@ daysGeneration();
 // Adicione a este botão a ID "btn-holiday"
 // Adicione este botão como filho/filha da tag <div> com classe "buttons-container"
 
-function createButton(name) {
+function createButton(name, id) {
   const buttonsContainer = document.querySelector('.buttons-container');
   const newButton = document.createElement('button');
-  newButton.id = 'btn-holiday';
+  newButton.id = id;
   newButton.innerHTML = name;
   buttonsContainer.appendChild(newButton);
 }
 
-createButton('Feriado');
+createButton('Feriado', 'btn-holiday');
 
 // Parte 3
 
@@ -90,3 +90,14 @@ function selectHolidays() {
 }
 
 holidayButton.addEventListener('click', selectHolidays);
+
+// Parte 4
+
+// Implemente uma função que crie dinamicamente um botão com o nome "Sexta-feira".
+// Sua função deve receber como parâmetro a string “Sexta-feira”;
+// Adicione a esse botão o ID "btn-friday";
+// Adicione esse botão como filho/filha da tag <div> com classe "buttons-container".
+
+'A função createButton foi refatorada para receber os paramentos nome e id para ser reaproveitada nesse exercício.'
+
+createButton('Sexta-feira', 'btn-friday');
