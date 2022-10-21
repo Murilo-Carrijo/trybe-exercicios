@@ -49,3 +49,20 @@ function daysGeneration() {
 }
 
 daysGeneration();
+
+// Parte 2
+
+// Implemente uma função que crie dinamicamente um botão com o nome “Feriados”.
+// Sua função deve receber um parâmetro com a string 'Feriados'
+// Adicione a este botão a ID "btn-holiday"
+// Adicione este botão como filho/filha da tag <div> com classe "buttons-container"
+
+function createButton(name) {
+  const buttonsContainer = document.querySelector('.buttons-container');
+  const newButton = document.createElement('button');
+  newButton.id = 'btn-holiday';
+  newButton.innerHTML = name;
+  buttonsContainer.appendChild(newButton);
+}
+
+createButton('Feriado');
