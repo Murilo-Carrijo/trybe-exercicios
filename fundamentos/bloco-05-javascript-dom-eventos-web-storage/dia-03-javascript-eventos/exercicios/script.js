@@ -233,3 +233,40 @@ function assingTask() {
 }
 
 assingTask();
+
+// Bônus
+
+// Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto “COMPROMISSOS”, adiciona o item à lista “MEUS COMPROMISSOS” ao clicar no botão “ADICIONAR”.
+// Se nenhum caractere for inserido no campo input, a função deve retornar um alert com uma mensagem de erro ao clicar em “ADICIONAR”.
+// Ao pressionar a tecla “enter” o evento também deverá ser disparado.
+// Dica - Propriedade: key.
+
+function addNewTask() {
+  const input = document.getElementById('task-input');
+  const addInput = document.querySelector('#btn-add');
+  const taskList = document.querySelector('.task-list');
+
+  addInput.addEventListener('click', function() {
+    if (input.value.length > 0) {
+      const liTask = document.createElement('li');
+      liTask.innerText = input.value;
+
+      taskList.appendChild(liTask);
+      input.value = '';
+    } else {
+      alert('Error: A tarefa deve ter ao menos 1 caracter.');
+    }
+  });
+
+  input.addEventListener('keyup', function(event) {
+    if (event.key === 'Enter' && input.value.length > 0) {
+      const liTask = document.createElement('li');
+      liTask.innerText = input.value;
+
+      taskList.appendChild(liTask);
+      input.value = '';
+    }
+  });
+}
+
+addNewTask();
