@@ -143,7 +143,6 @@ function highlightDay() {
 
 function removeHighlightDay() {
   const days = document.querySelector('#days');
-  console.log(days);
   days.addEventListener('mouseout', function(event) {
     event.target.style.fontSize = '20px';
     event.target.style.fontWeight = '200';
@@ -152,4 +151,20 @@ function removeHighlightDay() {
 
 highlightDay();
 removeHighlightDay();
+
+// Parte 7
+
+// Implemente uma função que adicione uma tarefa personalizada ao calendário.
+// A função deve receber como parâmetro a string com o nome da tarefa (ex: “cozinhar”) e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
+// O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks".
+
+function newTaskElement(task) {
+  const myTask = document.querySelector('.my-tasks');
+  const newTask = document.createElement('span');
+
+  newTask.innerHTML = task;
+  myTask.appendChild(newTask);
+}
+
+newTaskElement('cozinhar');
 
