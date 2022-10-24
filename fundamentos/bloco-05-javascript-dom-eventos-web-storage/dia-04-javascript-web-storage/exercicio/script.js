@@ -3,6 +3,7 @@ window.onload = function () {
   changeTextColor();
   changeFontSize();
   changeFontFamily();
+  getLSInfo();
 };
 
 function changeBackgroundColor() {
@@ -11,6 +12,7 @@ function changeBackgroundColor() {
     const body = document.getElementsByTagName('body')[0];
     const bgColor =  selectBgColor.value;
     body.style.backgroundColor = bgColor;
+    localStorage.setItem('bgColor', bgColor);
   });
 }
 
@@ -20,6 +22,7 @@ function changeTextColor() {
     const text = document.getElementById('paragraph');
     const txColor =  selectTextColor.value;
     text.style.color = txColor;
+    localStorage.setItem('txColor', txColor);
   });
 }
 
@@ -29,6 +32,7 @@ function changeFontSize() {
     const text = document.getElementById('paragraph');
     const fz = selectFontSize.value;
     text.style.fontSize = `${fz}px`;
+    localStorage.setItem('fz', `${fz}px`);
     selectFontSize.value = '';
   });
 }
@@ -38,5 +42,19 @@ function changeFontFamily() {
   console.log(selectTextFamily);
   selectTextFamily.addEventListener('change', function() {
     document.body.style.fontFamily  =  selectTextFamily.value;
+    localStorage.setItem('ff', selectTextFamily.value);
   });
+}
+
+function getLSInfo() {
+  const bgColor = localStorage.getItem('bgColor');
+  const txColor = localStorage.getItem('txColor');
+  const fz = localStorage.getItem('fz');
+  const ff = localStorage.getItem('ff');
+  const body = document.getElementsByTagName('body')[0];
+  const text = document.getElementById('paragraph');
+  body.style.backgroundColor = bgColor;
+  text.style.color  = txColor;
+  text.style.fontSize = fz;
+  body.style.fontFamily = ff;
 }
