@@ -2,6 +2,7 @@ window.onload = function () {
   changeBackgroundColor();
   changeTextColor();
   changeFontSize();
+  changeFontFamily();
 };
 
 function changeBackgroundColor() {
@@ -17,17 +18,25 @@ function changeTextColor() {
   const selectTextColor = document.getElementById('text-color');
   selectTextColor.addEventListener('change', function() {
     const text = document.getElementById('paragraph');
-    const bgColor =  selectTextColor.value;
-    text.style.color = bgColor;
+    const txColor =  selectTextColor.value;
+    text.style.color = txColor;
   });
 }
 
 function changeFontSize() {
   const selectFontSize = document.getElementById('font-size-text');
-  console.log(selectFontSize);
   selectFontSize.addEventListener('change', function() {
     const text = document.getElementById('paragraph');
     const fz = selectFontSize.value;
     text.style.fontSize = `${fz}px`;
+    selectFontSize.value = '';
+  });
+}
+
+function changeFontFamily() {
+  const selectTextFamily = document.getElementById('font-family-text');
+  console.log(selectTextFamily);
+  selectTextFamily.addEventListener('change', function() {
+    document.body.style.fontFamily  =  selectTextFamily.value;
   });
 }
