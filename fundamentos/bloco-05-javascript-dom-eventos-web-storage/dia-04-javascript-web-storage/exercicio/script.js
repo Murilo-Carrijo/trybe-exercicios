@@ -24,9 +24,10 @@ function changeTextColor() {
 
 function changeFontSize() {
   const selectFontSize = document.getElementById('font-size-text');
+  console.log(selectFontSize);
   selectFontSize.addEventListener('change', function() {
     const text = document.getElementById('paragraph');
     const fz = selectFontSize.value;
-    text.style.fontSize = fz;
+    text.style.fontSize = `${fz}px`;
   });
 }
