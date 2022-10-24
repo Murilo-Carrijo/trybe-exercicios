@@ -1,6 +1,7 @@
 window.onload = function () {
   changeBackgroundColor();
   changeTextColor();
+  changeFontSize();
 };
 
 function changeBackgroundColor() {
@@ -18,5 +19,14 @@ function changeTextColor() {
     const text = document.getElementById('paragraph');
     const bgColor =  selectTextColor.value;
     text.style.color = bgColor;
+  });
+}
+
+function changeFontSize() {
+  const selectFontSize = document.getElementById('font-size-text');
+  selectFontSize.addEventListener('change', function() {
+    const text = document.getElementById('paragraph');
+    const fz = selectFontSize.value;
+    text.style.fontSize = fz;
   });
 }
