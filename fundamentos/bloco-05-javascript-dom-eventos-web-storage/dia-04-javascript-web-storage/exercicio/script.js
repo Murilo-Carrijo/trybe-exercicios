@@ -1,5 +1,6 @@
 window.onload = function () {
-  changeBackgroundColor();   
+  changeBackgroundColor();
+  changeTextColor();
 };
 
 function changeBackgroundColor() {
@@ -8,5 +9,14 @@ function changeBackgroundColor() {
     const body = document.getElementsByTagName('body')[0];
     const bgColor =  selectBgColor.value;
     body.style.backgroundColor = bgColor;
+  });
+}
+
+function changeTextColor() {
+  const selectTextColor = document.getElementById('text-color');
+  selectTextColor.addEventListener('change', function() {
+    const text = document.getElementById('paragraph');
+    const bgColor =  selectTextColor.value;
+    text.style.color = bgColor;
   });
 }
