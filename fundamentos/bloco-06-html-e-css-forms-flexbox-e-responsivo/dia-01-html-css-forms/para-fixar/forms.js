@@ -79,6 +79,13 @@ function addPlaceholder() {
 
 // 5 - Adicione o atributo required para os campos de email e senha.
 
+function addRequired() {
+  const inputEmail = document.querySelector('.input-email');
+  const inputPassword = document.querySelector('.input-password');
+  inputEmail.required = true;
+  inputPassword.required = true;
+}
+
 // Adicione o atributo autocomplete="off" para o campo de email.
 
 // Adicione o atributo autofocus para o campo de email.
@@ -89,4 +96,5 @@ window.onload = () => {
   checkBoxRemember();
   createButon();
   addPlaceholder();
+  addRequired();
 }
