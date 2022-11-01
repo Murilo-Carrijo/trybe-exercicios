@@ -88,6 +88,13 @@ function addRequired() {
 
 // Adicione o atributo autocomplete="off" para o campo de email.
 
+function addAutocompleteOff() {
+  const inputEmail = document.querySelector('.input-email');
+  inputEmail.autocomplete = 'off';
+  console.log(inputEmail);
+}
+
+
 // Adicione o atributo autofocus para o campo de email.
 
 window.onload = () => {
@@ -97,4 +104,5 @@ window.onload = () => {
   createButon();
   addPlaceholder();
   addRequired();
+  addAutocompleteOff();
 }
