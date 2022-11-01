@@ -18,6 +18,33 @@ function title() {
 
 // 1 - Adicione os campos de entrada para email e senha.
 
+function inputForms() {
+  const body = document.getElementsByTagName('body')[0];
+  const forms = document.createElement('form');
+  forms.id = 'form-container';
+  forms.className = 'form-container';
+  forms.style.border = '1px solid black';
+  forms.style.width = '80%';
+  forms.style.margin = 'auto';
+  body.appendChild(forms);
+
+  const labelEmail = document.createElement('label');
+  labelEmail.innerText = 'email';
+  labelEmail.className = 'input-email';
+  forms.appendChild(labelEmail);
+  const inputEmail = document.createElement('input');
+  inputEmail.type = 'email';
+  labelEmail.appendChild(inputEmail);
+
+  const labelPassword = document.createElement('label');
+  labelPassword.innerText = 'password';
+  labelPassword.className = 'input-password';
+  forms.appendChild(labelPassword);
+  const inputPassword = document.createElement('input');
+  inputPassword.type = 'password';
+  labelPassword.appendChild(inputPassword);
+}
+
 
 // 2 - Adicione um checkbox com o texto Lembre-me.
 
@@ -33,4 +60,5 @@ function title() {
 
 window.onload = () => {
   title();
+  inputForms();
 }
