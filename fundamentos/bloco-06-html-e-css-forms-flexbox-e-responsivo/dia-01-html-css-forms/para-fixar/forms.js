@@ -70,6 +70,12 @@ function createButon() {
 }
 
 // 4 - Adicione os placeholder Digite seu email e Digite sua senha para os campos de email e senha.
+function addPlaceholder() {
+  const inputEmail = document.querySelector('.input-email');
+  const inputPassword = document.querySelector('.input-password');
+  inputEmail.placeholder = 'Digite seu email';
+  inputPassword.placeholder = 'Digite seu password';
+}
 
 // 5 - Adicione o atributo required para os campos de email e senha.
 
@@ -82,4 +88,5 @@ window.onload = () => {
   inputForms();
   checkBoxRemember();
   createButon();
+  addPlaceholder();
 }
