@@ -86,16 +86,20 @@ function addRequired() {
   inputPassword.required = true;
 }
 
-// Adicione o atributo autocomplete="off" para o campo de email.
+// 6 - Adicione o atributo autocomplete="off" para o campo de email.
 
 function addAutocompleteOff() {
   const inputEmail = document.querySelector('.input-email');
   inputEmail.autocomplete = 'off';
-  console.log(inputEmail);
 }
 
 
-// Adicione o atributo autofocus para o campo de email.
+// 7 - Adicione o atributo autofocus para o campo de email.
+
+function addAutofocus() {
+  const inputEmail = document.querySelector('.input-email');
+  inputEmail.autofocus = true;
+}
 
 window.onload = () => {
   title();
@@ -105,4 +109,5 @@ window.onload = () => {
   addPlaceholder();
   addRequired();
   addAutocompleteOff();
+  addAutofocus();
 }
