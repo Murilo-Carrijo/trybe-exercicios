@@ -61,6 +61,14 @@ function checkBoxRemember() {
 
 // 3 - Adicione um botão com o texto Entrar; crie o botão através da tag <input>.
 
+function createButon() {
+  const form = document.getElementById('form-container');
+  const inputButton = document.createElement('input');
+  inputButton.type = 'button';
+  inputButton.value = 'Entrar';
+  form.appendChild(inputButton);
+}
+
 // 4 - Adicione os placeholder Digite seu email e Digite sua senha para os campos de email e senha.
 
 // 5 - Adicione o atributo required para os campos de email e senha.
@@ -73,4 +81,5 @@ window.onload = () => {
   title();
   inputForms();
   checkBoxRemember();
+  createButon();
 }
