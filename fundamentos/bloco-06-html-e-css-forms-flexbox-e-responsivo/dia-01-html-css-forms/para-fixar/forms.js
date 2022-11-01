@@ -48,6 +48,17 @@ function inputForms() {
 
 // 2 - Adicione um checkbox com o texto Lembre-me.
 
+function checkBoxRemember() {
+  const form = document.getElementById('form-container');
+  const labelCheckbox = document.createElement('label');
+  labelCheckbox.innerText = 'Lembre-me';
+  form.appendChild(labelCheckbox);
+  const inputCheckbox = document.createElement('input');
+  inputCheckbox.type = 'checkbox';
+  inputCheckbox.className = 'input-checkbox';
+  labelCheckbox.appendChild(inputCheckbox);
+}
+
 // 3 - Adicione um botão com o texto Entrar; crie o botão através da tag <input>.
 
 // 4 - Adicione os placeholder Digite seu email e Digite sua senha para os campos de email e senha.
@@ -61,4 +72,5 @@ function inputForms() {
 window.onload = () => {
   title();
   inputForms();
+  checkBoxRemember();
 }
