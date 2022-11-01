@@ -30,18 +30,18 @@ function inputForms() {
 
   const labelEmail = document.createElement('label');
   labelEmail.innerText = 'email';
-  labelEmail.className = 'input-email';
   forms.appendChild(labelEmail);
   const inputEmail = document.createElement('input');
   inputEmail.type = 'email';
+  inputEmail.className = 'input-email'
   labelEmail.appendChild(inputEmail);
 
   const labelPassword = document.createElement('label');
   labelPassword.innerText = 'password';
-  labelPassword.className = 'input-password';
   forms.appendChild(labelPassword);
   const inputPassword = document.createElement('input');
   inputPassword.type = 'password';
+  inputPassword.className = 'input-password';
   labelPassword.appendChild(inputPassword);
 }
 
