@@ -19,3 +19,7 @@ function testPreventDefault(event) {
 }
 
 HREF_LINK.addEventListener('click', testPreventDefault);
+
+// 2 - Adicione um evento click no elemento checkbox que possui o id input-checkbox. Na função do evento, implemente o método .preventDefault() para prevenir o comportamento padrão do elemento. Ou seja, ao clicar na caixinha, nada deve acontecer.
+
+INPUT_CHECKBOX.addEventListener('click', testPreventDefault);
