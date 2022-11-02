@@ -22,13 +22,21 @@
       <input type="email" name="email" id="input-email" minlength="10" maxlength="50" placeholder="Digite seu email" required>
     </label>
     <br>
-    <label>Selecione o seu destino:
-      <select name="destination" id="select-destination">
-        <option value="city">Cidade</option>
-        <option value="countryside" selected>Campo</option>
-        <option value="beach">Praia</option>
-        <option value="mountains">Montanhas</option>
-      </select>
+    <label for="city">
+      <input type="radio" name="destination" id="city">
+      Cidade
+    </label>
+    <label for="countryside">
+      <input type="radio" name="destination" id="countryside">
+      Campo
+    </label>
+    <label for="beach">
+      <input type="radio" name="destination" id="beach">
+      Praia
+    </label>
+    <label for="mountains">
+      <input type="radio" name="destination" id="mountains">
+      Montanhas
     </label>
     <br>
     <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>  
