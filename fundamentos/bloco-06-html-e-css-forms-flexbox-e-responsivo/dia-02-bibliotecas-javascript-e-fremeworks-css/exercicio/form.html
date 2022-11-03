@@ -20,17 +20,24 @@
         <input class="form-control" type="email" id="email" name="email" placeholder="Digite seu e-mail" maxlength="50" minlength="10" required>
         <br/>
 
-        <label for="destination1">Cidade</label>
-        <input type="radio" id="destination1" className="radios" name="destinations" value="Cidade" required>
-
-        <label for="destination2">Campo</label>
-        <input type="radio" id="destination2" className="radios" name="destinations" value="Campo" required>
-
-        <label for="destination3">Praia</label>
-        <input type="radio" id="destination3" className="radios" name="destinations" value="Praia" required>
-
-        <label for="destination4">Montanhas</label>
-        <input type="radio" id="destination4" className="radios" name="destinations" value="Montanhas" required>
+        <div class="input-radio-container">
+          <span>Selecione o seu destino:</span>
+          <label for="destination1">Cidade
+            <input type="radio" id="destination1" className="radios" name="destinations" value="Cidade" required>
+          </label>
+  
+          <label for="destination2">Campo
+            <input type="radio" id="destination2" className="radios" name="destinations" value="Campo" required>
+          </label>
+  
+          <label for="destination3">Praia
+            <input type="radio" id="destination3" className="radios" name="destinations" value="Praia" required>
+          </label>
+  
+          <label for="destination4">Montanhas
+            <input type="radio" id="destination4" className="radios" name="destinations" value="Montanhas" required>
+          </label>
+        </div>
         <br/>
 
         <label for="why">Por que você deveria ser a pessoa desenvolvedora escolhida pelo concurso TrybeTrip?</label>
