@@ -1,0 +1,34 @@
+/* Introdução - flex-direction, flex-wrap, flex-flow e reverse */
+
+.box {
+  color: #9069EF;
+  background-color: rgb(243, 243, 243);
+  border: 2px solid #232525;
+  font-size: 50px;
+  height: 60px;
+  margin: 10px 5px;
+  text-align: center;
+  width: 30%;
+}
+
+.box-container {
+  background-color: #0fa36b;
+  display: flex;
+  /* ADICIONE AQUI SEUS TESTES */
+  flex-direction: row;
+  /* flex-direction: column; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column-reverse; */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: nowrap; */
+  flex-flow: row wrap;
+  /* flex-flow: row-reverse nowrap; */
+  /* flex-flow: column wrap-reverse; */
+  /* flex-flow: column wrap; */
+}
+
+/* Teste as possibilidades (row, column, row-reverse e column-reverse) para a propriedade flex-direction. */
+
+/* Teste as possibilidades (wrap e nowrap) para a propriedade flex-wrap. */
+
+/* Teste as possibilidades para a propriedade flex-flow. */
