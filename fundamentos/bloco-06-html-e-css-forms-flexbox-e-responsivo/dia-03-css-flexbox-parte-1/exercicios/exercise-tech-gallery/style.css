@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+.header-img {
+  width: 70px;
+}
+
+.gallery-img {
+  width: 150px;
+}
+
+.social-img {
+  width: 25px;
+  margin-left: 10px;
+}
+
+header {
+  align-items: center;
+  background-color: #242629;
+  color: #94a1b2;
+  display: flex;
+  justify-content: space-around;
+}
+
+header h1 {
+  color: #fffffe;
+}
+
+.section-text {
+  align-items: center;
+  background-color: #fffffe;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+.section-img {
+  align-items: center;
+  align-content: space-between;
+  background-color: #fffffe;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 40%;
+}
+
+.card-img {
+  align-items: center;
+  align-content: space-between;
+  background-color: #eff0f3;
+  border-radius: 12px;
+  box-shadow: 1px 1px #aaabad;
+  color: #72757e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8px;
+  padding: 16px;
+  width: 200px;
+}
+
+.card-img h4 {
+  padding-bottom: 8px;
+}
+
+.last-card {
+  border: 1px solid #eff0f3;
+  margin-top: 16px;
+  width: 200px;
+}
+
+footer {
+  background-color: #fffffe;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
