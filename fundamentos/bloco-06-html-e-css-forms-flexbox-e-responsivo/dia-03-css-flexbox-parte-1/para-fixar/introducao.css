@@ -14,10 +14,12 @@
 .box-container {
   background-color: #0fa36b;
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
   /* flex-direction: column; */
   /* flex-direction: row-reverse; */
-  flex-direction: column-reverse;
+  /* flex-direction: column-reverse; */
+  /* flex-wrap: wrap; */
+  flex-wrap: nowrap;
   /* ADICIONE AQUI SEUS TESTES */
 }
 
