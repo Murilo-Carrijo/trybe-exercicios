@@ -14,5 +14,15 @@
 .box-container {
   background-color: #0fa36b;
   display: flex;
+  /* flex-direction: row; */
+  /* flex-direction: column; */
+  /* flex-direction: row-reverse; */
+  flex-direction: column-reverse;
   /* ADICIONE AQUI SEUS TESTES */
 }
+
+/* Teste as possibilidades (row, column, row-reverse e column-reverse) para a propriedade flex-direction. */
+
+/* Teste as possibilidades (wrap e nowrap) para a propriedade flex-wrap. */
+
+/* Teste as possibilidades para a propriedade flex-flow. */
