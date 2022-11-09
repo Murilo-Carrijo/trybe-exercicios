@@ -35,6 +35,7 @@ body {
 }
 
 .menu-container li {
+	align-self: center;
   color: white;
   font-weight: 500;
   font-size: 1.3rem;
