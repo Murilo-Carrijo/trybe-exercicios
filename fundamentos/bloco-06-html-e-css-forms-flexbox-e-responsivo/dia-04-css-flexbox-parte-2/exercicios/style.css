@@ -75,18 +75,22 @@ body {
 }
 
 .aside-container {
+	align-self: center;
   display: flex;
 	flex-basis: 350px;
+	flex-grow: 1;
   flex-direction: column;
   margin: 20px;
 }
 
 .aside-container h3, h4 {
+	align-self: center;
   margin-bottom: 10px;
   text-align: center;
 }
 
 .aside-container p {
+	align-self: center;
   margin: 10px 0;
   text-align: justify;
 }
