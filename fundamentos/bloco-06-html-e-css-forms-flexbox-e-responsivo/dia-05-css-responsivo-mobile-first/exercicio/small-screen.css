@@ -70,7 +70,9 @@ figcaption {
 @media only screen and (min-width: 992px) {
   body {
     background-color: #078080;
+    color: #232323;
     font-size: 1.4em;
+    margin: 20px 8%;
   }
 }
 
