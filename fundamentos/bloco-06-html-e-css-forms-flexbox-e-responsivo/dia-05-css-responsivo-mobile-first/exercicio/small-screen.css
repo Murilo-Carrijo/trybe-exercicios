@@ -68,7 +68,9 @@ figcaption {
 /* Crie uma nova media query no seu arquivo CSS usando a dimensão para telas de desktop e realize os seguintes ajustes dentro do breakpoint (aqui podemos usar o tamanho de tela de 992px): */
 
 @media only screen and (min-width: 992px) {
-  
+  body {
+    background-color: #078080;
+  }
 }
 
 /* Altere a cor de fundo; */
