@@ -40,7 +40,18 @@ figcaption {
 @media only screen and (min-width: 768px) {
   body {
     background-color: #f8f5f2;
-    font-size: 24px;
+    margin: 25px 6%;
+    font-size: 1.2em;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  figure {
+    width: 45%;
+    margin-right: 4.5%;
   }
 }
 
