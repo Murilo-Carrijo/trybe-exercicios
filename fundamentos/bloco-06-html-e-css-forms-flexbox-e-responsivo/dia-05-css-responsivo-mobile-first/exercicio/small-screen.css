@@ -38,7 +38,9 @@ figcaption {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  
+  body {
+    background-color: #f8f5f2;
+  }
 }
 
 /* Altere a cor de fundo (isso vai te ajudar a perceber quando a media query teve efeito); */
