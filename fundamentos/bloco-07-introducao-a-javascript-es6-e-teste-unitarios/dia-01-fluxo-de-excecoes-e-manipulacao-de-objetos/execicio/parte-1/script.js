@@ -31,7 +31,7 @@ function sum() {
     const result = Number(value1) + Number(value2);
     document.getElementById('result').innerHTML = `Resultado: ${result}`;
   } catch (error) {
-    document.getElementById('result').innerHTML = `Resultado: ${error.message}`;
+    document.getElementById('result').innerHTML = `Erro: ${error.message}`;
   }
 
   document.getElementById('value1').value = '';
