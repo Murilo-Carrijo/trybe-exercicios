@@ -83,6 +83,18 @@ console.log(allLessons);
 
 // 6 - Usando o objeto criado no tópico anterior, crie uma função que retorne o número total de estudantes em todas as aulas.
 
+const sumStudants = (allLessons) => {
+  let total = 0;
+  const lessonsKeys = Object.keys(allLessons);
+  for (let index = 0; index < lessonsKeys.length; index++) {
+    const element = lessonsKeys[index];
+    total = total + allLessons[element].numeroEstudantes;
+  }
+  console.log('Total de estudantes: ', total);
+};
+
+sumStudants(allLessons);
+
 // 7 - Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. Por exemplo:
 // console.log(getValueByNumber(lesson1, 0));
 // Output: 'Matemática'
