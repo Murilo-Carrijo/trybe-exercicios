@@ -32,6 +32,13 @@ editLesson(lesson2, 'turno', 'noite');
 
 // 2 - Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
 
+const listKeys = (lesson) => {
+  const keys = Object.keys(lesson);
+  console.log(keys);
+};
+
+listKeys(lesson1);
+
 // 3 - Crie uma função para mostrar o tamanho de um objeto.
 
 // 4 - Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
