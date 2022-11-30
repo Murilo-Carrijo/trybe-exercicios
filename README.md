@@ -50,7 +50,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários
 
-- [ ] 7-1: _JavaScript ES6 - let, const, arow functions e template literais_
+- [X] 7-1: _JavaScript ES6 - let, const, arow functions e template literais_
 - [ ] 7-2: _JavaScript ES6 - Fluxo de exceção e Objetos_
 - [ ] 7-3: _Primeiros passos em Jest_
 
