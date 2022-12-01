@@ -19,7 +19,7 @@ npm -v
 * criar e acessar a pasta do projeto
 
 ```bash
-mkdir new-project && cd new-project
+mkdir instalando-jest && cd instalando-jest
 ```
 
 ---
@@ -53,9 +53,20 @@ code .
 * Abra o arquivo package.json e altere o valor atribuído a chave test para Jest:
 
 ```
-"scripts": {
-"test": "jest"
-},
+{
+  "name": "instalando-jest",
+  "version": "1.0.0",
+  "description": "---",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest" // <-- altere essa linha do packege.json
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
 ```
 
 * Salve a alteração.
