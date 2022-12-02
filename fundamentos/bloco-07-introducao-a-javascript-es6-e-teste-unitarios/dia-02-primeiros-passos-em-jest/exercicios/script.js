@@ -54,10 +54,22 @@ const decode = (string) => {
   return mapString(map, string);
 };
 
+const techList = (list, name) => {
+  const orderList = list.sort();
+  const result = [];
+  if (list.length === 0) return 'Vazio!';
+  for (let i = 0; i < orderList.length; i += 1) {
+    const element = orderList[i];
+    result.push({ tech: element, name });
+  }
+  return result;
+};
+
 module.exports = {
   myRemove,
   myFizzBuzz,
   mapString,
   encode,
   decode,
+  techList,
 };
