@@ -67,7 +67,19 @@ const techList = (list, name) => {
 
 const hydrate = (string) => {
   const stringArr = string.split(" ");
-  console.log(stringArr);
+  let countGlass = 0;
+  let glass = 'copo';
+  for (let i = 0; i < stringArr.length; i += 1) {
+    const element = Number(stringArr[i]);
+    if (element) {
+      countGlass += element;
+    }
+
+    if (countGlass > 1) {
+      glass = 'copos'
+    }
+  }
+  return `${countGlass} ${glass} de água`;
 };
 
 module.exports = {
