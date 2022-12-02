@@ -1,6 +1,9 @@
 const {
   myRemove,
   myFizzBuzz,
+  mapString,
+  encode,
+  decode,
 } = require('./script');
 
 describe('Exercício 1', ()=> {
@@ -30,5 +33,29 @@ describe('Exercício 2 - Verificando se a função fizzbuzz', () => {
 
   test('Caso o número não seja divisível por 3 e nem por 5 - fizz', () => {
     expect(myFizzBuzz(number)).toBe(8);
+  });
+});
+
+describe('Exercício 3', () => {
+  test('Verificando se encode é uma função', () => {
+    expect(typeof encode).toEqual('function');
+  });
+  test('Verificando se decode é uma função', () => {
+    expect(typeof decode).toEqual('function');
+  });
+  test('Verificando se a função encode converte vogais em números', () => {
+    expect(encode('sequoia')).toEqual('s2q5431');
+  });
+  test('Verifiquando se a quantidade de caracteres não é alterada ao executar a função encode', () => {
+    expect(encode('sequoia').length).toEqual(7);
+  });
+  test('Verificando se a função encode converte números em vogais', () => {
+    expect(decode('s2q5431')).toEqual('sequoia');
+  });
+  test('Verifiquando se a quantidade de caracteres não é alterada ao executar a função decode', () => {
+    expect(decode('s2q5431').length).toEqual(7);
+  });
+  test('Verificando se a função encode não converte consoantes em números', () => {
+    expect(encode('b, c, d, f, g')).toEqual('b, c, d, f, g');
   });
 });
