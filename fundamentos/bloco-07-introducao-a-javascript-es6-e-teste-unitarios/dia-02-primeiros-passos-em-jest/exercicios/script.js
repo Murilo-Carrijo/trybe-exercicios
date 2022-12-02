@@ -1,0 +1,93 @@
+function myRemove(arr, item) {
+  let newArr = [];
+  for (let index = 0; index < arr.length; index += 1) {
+    if (item !== arr[index]) {
+      newArr.push(arr[index]);
+    }
+  }
+  return newArr;
+};
+
+function myFizzBuzz(num) {
+  if (typeof num !== 'number') return false;
+  if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
+  if (num % 3 === 0) return 'fizz';
+  if (num % 5 === 0) return 'buzz';
+  return num;
+};
+
+const mapString = (objectMap, string) => {
+  const splitString = string.split('');
+  const mappedArray = [];
+  for (let index = 0; index < splitString.length; index += 1) {
+    const character = splitString[index];
+    const mappedValue = objectMap[character];
+    
+    if (mappedValue) {
+      mappedArray.push(mappedValue);
+    } else {
+      mappedArray.push(character);
+    }
+  }
+  return mappedArray.join('');
+};
+
+const encode = (string) => {
+  const map = {
+    a: 1,
+    e: 2,
+    i: 3,
+    o: 4,
+    u: 5,
+  };
+  return mapString(map, string);
+};
+
+const decode = (string) => {
+  const map = {
+    1: 'a',
+    2: 'e',
+    3: 'i',
+    4: 'o',
+    5: 'u',
+  };
+  return mapString(map, string);
+};
+
+const techList = (list, name) => {
+  if (list.length === 0) return 'Vazio!';
+  const orderList = list.sort();
+  const result = [];
+  for (let i = 0; i < orderList.length; i += 1) {
+    const element = orderList[i];
+    result.push({ tech: element, name });
+  }
+  return result;
+};
+
+const hydrate = (string) => {
+  const stringArr = string.split(" ");
+  let countGlass = 0;
+  let glass = 'copo';
+  for (let i = 0; i < stringArr.length; i += 1) {
+    const element = Number(stringArr[i]);
+    if (element) {
+      countGlass += element;
+    }
+
+    if (countGlass > 1) {
+      glass = 'copos'
+    }
+  }
+  return `${countGlass} ${glass} de água`;
+};
+
+module.exports = {
+  myRemove,
+  myFizzBuzz,
+  mapString,
+  encode,
+  decode,
+  techList,
+  hydrate,
+};
