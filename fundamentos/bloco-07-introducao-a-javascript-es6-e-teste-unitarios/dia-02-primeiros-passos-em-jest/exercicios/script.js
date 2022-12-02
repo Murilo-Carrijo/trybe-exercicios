@@ -55,14 +55,19 @@ const decode = (string) => {
 };
 
 const techList = (list, name) => {
+  if (list.length === 0) return 'Vazio!';
   const orderList = list.sort();
   const result = [];
-  if (list.length === 0) return 'Vazio!';
   for (let i = 0; i < orderList.length; i += 1) {
     const element = orderList[i];
     result.push({ tech: element, name });
   }
   return result;
+};
+
+const hydrate = (string) => {
+  const stringArr = string.split(" ");
+  console.log(stringArr);
 };
 
 module.exports = {
@@ -72,4 +77,5 @@ module.exports = {
   encode,
   decode,
   techList,
+  hydrate,
 };
