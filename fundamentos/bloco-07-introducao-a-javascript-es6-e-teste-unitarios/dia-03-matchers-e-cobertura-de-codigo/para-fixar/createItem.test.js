@@ -18,6 +18,9 @@ describe('a função createItem', () => {
   it('Lança um erro se o nome do item não é uma string', () => {
     expect(() => { createItem(2, 'kg', 1.99, 20) }).toThrow( new Error('O nome do item deve ser uma string'));
   });
-  it.todo('Lança um erro se o preço é negativo');
+  it('Lança um erro se o preço é negativo', () => {
+    const message = 'O preço do item deve ser maior que zero';
+    expect(() => { createItem('banana', 'kg', -1, 20) }).toThrow( new Error(message));
+  });
   it.todo('Lança um erro se o preço é zero');
 });
