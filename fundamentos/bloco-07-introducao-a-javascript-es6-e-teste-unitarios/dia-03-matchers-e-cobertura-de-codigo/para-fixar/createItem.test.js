@@ -15,7 +15,9 @@ describe('a função createItem', () => {
   it('Lança um erro quando não recebe parâmetros', () => {
     expect(() => { createItem() }).toThrow();
   });
-  it.todo('Lança um erro se o nome do item não é uma string');
+  it('Lança um erro se o nome do item não é uma string', () => {
+    expect(() => { createItem(2, 'kg', 1.99, 20) }).toThrow( new Error('O nome do item deve ser uma string'));
+  });
   it.todo('Lança um erro se o preço é negativo');
   it.todo('Lança um erro se o preço é zero');
 });
