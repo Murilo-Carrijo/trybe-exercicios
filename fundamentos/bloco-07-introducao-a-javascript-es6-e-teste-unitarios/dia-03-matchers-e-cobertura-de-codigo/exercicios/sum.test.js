@@ -1,0 +1,7 @@
+const sum = require('./sum');
+
+describe('Test sum function', () => {
+  test('Test if sum(4, 5) return 9', () => {
+    expect(sum(4, 5)).toBe(9);
+  });
+});
