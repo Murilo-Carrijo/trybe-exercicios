@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1670367508211" clover="3.2.0">
-  <project timestamp="1670367508211" name="All files">
-    <metrics statements="11" coveredstatements="10" conditionals="8" coveredconditionals="7" methods="2" coveredmethods="2" elements="21" coveredelements="19" complexity="0" loc="11" ncloc="11" packages="1" files="2" classes="2"/>
+<coverage generated="1670367954796" clover="3.2.0">
+  <project timestamp="1670367954796" name="All files">
+    <metrics statements="11" coveredstatements="11" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2" elements="21" coveredelements="21" complexity="0" loc="11" ncloc="11" packages="1" files="2" classes="2"/>
     <file name="printMessage.js" path="/home/murilo/trybe/trybe-exercicios/fundamentos/bloco-07-introducao-a-javascript-es6-e-teste-unitarios/dia-03-matchers-e-cobertura-de-codigo/exercicios/printMessage.js">
-      <metrics statements="7" coveredstatements="6" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="7" count="1" type="stmt"/>
-      <line num="8" count="3" type="cond" truecount="3" falsecount="1"/>
-      <line num="9" count="0" type="stmt"/>
+      <line num="8" count="5" type="cond" truecount="4" falsecount="0"/>
+      <line num="9" count="2" type="stmt"/>
       <line num="11" count="3" type="stmt"/>
       <line num="14" count="1" type="stmt"/>
       <line num="16" count="1" type="stmt"/>
