@@ -12,4 +12,8 @@ describe('Test sum function', () => {
   test('Test if sum("4", 0) return Error', () => {
     expect(() => { sum('4', 0) }).toThrow();
   });
+
+  test('Test if the error messange is "parameters must be numbers"', () => {
+    expect(() => { sum('4', 0) }).toThrow(new Error('parameters must be numbers'));
+  });
 });
