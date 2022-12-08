@@ -1,0 +1,51 @@
+Chegou a hora de colocar a mão no código, ou seja, praticar!💪
+
+Utilize o PEP para realizar os exercícios abaixo, digite 'python3' no terminal e vamos a prática.
+
+Exercício 1: No terminal, inicialize duas variáveis a e b, sendo a = 10 e b = 5. Mostre o resultado das 7 operações básicas (soma, subtração, multiplicação, divisão, divisão inteira, potenciação e módulo) envolvendo essas variáveis.
+
+R: 
+    Atribuindo valores a variável: a = 10
+    Atribuindo valores a variável: b = 10
+    Soma das variáveis: a + b (o resultado impresso no terminal foi 15)
+    Subtração das variáveis: a - b (o resultado impresso no terminal foi 5)
+    Multiplicação das variáveis: a * b (o resultado impresso no terminal foi 50)
+    Divisão das variáveis: a / b (o resultado impresso no terminal foi 2.0)
+    Divisão Inteira das variáveis: a // b (o resultado impresso no terminal foi 2)
+    Potenciação das variáveis: a ** b (o resultado impresso no terminal foi 100000)
+    Módulo das variáveis: a % b (o resultado impresso no terminal foi 0)
+
+
+
+
+Exercício 2: Declare e inicialize uma variável: hours = 6. Quantos minutos têm em 6 horas? E quantos segundos? Declare e inicialize variáveis minutes e seconds que recebem os respectivos resultados das contas. Depois, imprima cada uma delas.
+
+R:
+    Atribuindo valores a variável: hours = 6
+    Atribuindo valores a variável: minutes = 6 * 60
+    Atribuindo valores a variável: seconds = minutes * 60
+    Printando o resultado na tela: minutes (o resultado impresso foi 360)
+    Printando o resultado na tela: seconds (o resultado impresso foi 21600)
+
+
+Exercício 3: Teste e verifique o que acontece se você colocar um ponto e vírgula no final de uma instrução em Python.
+
+R:
+    Atribuindo valor a variável = nome = Murilo;
+    Retorno:
+        Traceback (most recent call last):
+             File "<stdin>", line 1, in <module>
+        NameError: name 'Murilo' is not defined
+
+Exercício 4: Suponha que o preço de capa de um livro seja R$ 24,20, mas as livrarias recebem um desconto de 40%. O transporte custa 3,00 para o primeiro exemplar e 75 centavos para cada exemplar adicional. Qual é o custo total de atacado para 60 cópias? Escreva uma expressão que receba o custo total e a imprima.
+
+R:
+    Atribuindo valores as variáveis:
+        qty = 60
+        valor_uni_bruto = 24.20
+        desconto = 0.4
+        frete_primeiro_livro = 3
+        frete_livro_adicional = 0.75
+        total = (valor_uni_bruto * qty * (1 - desconto)) + frete_primeiro_livro + (frete_livro_adicional * (qty -1))
+    Printando o resultado na tela: total (o resultado impresso foi 918.4499999999999
+)

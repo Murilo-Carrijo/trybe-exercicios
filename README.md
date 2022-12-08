@@ -61,3 +61,103 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 8-3: _JavaScript ES6 - map e filter_
 - [ ] 8-4: _JavaScript ES6 - reduce_
 - [ ] 8-5: _JavaScript ES6 - JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais_
+
+---
+
+## Front-end :white_check_mark:
+
+##### Bloco 9: Introdução ao Frontend e JavaScript assíncrono
+
+- [ ] 9-1: _Ambiente de desenvolvimento_
+- [ ] 9-2: _JavaScript Assíncrono - Promises e fetch_
+- [ ] 9-3: _Prátca Casa de câmbio_
+- [ ] 9-4: _Async, await e testes assíncronos_
+
+##### Bloco 10: Introdução a React
+
+##### Bloco 11: Componentes com Estado, Eventos e Formulários com React
+
+##### Bloco 12: Metodologias Ágeis
+
+##### Bloco 13: Testes automatizados com React Testing Library
+
+##### Bloco 14: Gerenciamento de estado com Redux
+
+##### Bloco 15: Projeto Jogo de Trivia
+
+##### Bloco 16: Context API e React Hooks
+
+##### Bloco 17: Projeto App de Receitas
+
+---
+
+## Back-end :white_check_mark:
+
+##### Bloco 18: Docker Utilizado Containers
+
+##### Bloco 19: Introdução à SQL
+
+##### Bloco 20: Funções SQL, JOINs e Normalização
+
+##### Bloco 21: Introdução ao desenvolvimento Web com Node.js
+
+##### Bloco 22: Arquitetura de Software: MOdel, Service e Controller
+
+##### Bloco 23: Node.js: ORM e Autenticação
+
+##### Bloco 24: Masterclass: Implantação de Aplicações na Nuvem
+
+##### Bloco 25: Introdução a TypeScript
+
+##### Bloco 26: Programação Orientada a Objetos (POO) e SOLID
+
+##### Bloco 27: Projeto - TFC - Trybe Futebol Clube
+
+##### Bloco 28: Introdução ao MongoDB
+
+##### Bloco 29: APIs OO e NoSQL
+
+##### Bloco 30: Projeto - App de Delivery
+
+##### Bloco 31: MasterClass - VPS, CI/CD
+
+---
+
+## Ciência da Computação :white_check_mark:
+
+##### Bloco 32: Introdução à Python
+
+- [ ] 32-1: _Aprendendo Python_
+- [ ] 32-2: _Entrada e Saída de Dados_
+- [ ] 32-3: _Testes_
+
+##### Bloco 33: Padrões de Projeto
+
+- [ ] 33-1: _P.O.O em python_
+- [ ] 33-2: _Pdrões - Interator, Adapter, Strategy_
+- [ ] 33-3: _Pdrões - Decorator, Observer, Factory_
+
+##### Bloco 34: Redes e Raspagem de Dados
+
+- [ ] 34-1: _Arquitetura de redes_
+- [ ] 34-2: _Raspagem de Dados_
+- [ ] 34-3: _Outras Ferramentas de Raspagem de Dados_
+
+##### Bloco 35: Algoritmos
+
+- [ ] 35-1: _Complexidade de Algoritmos_
+- [ ] 35-2: _Recursividade e Estatégias para solução de problemas_
+- [ ] 35-3: _Algoritmos de ordenação e busca_
+
+##### Bloco 36: Estrutura de Dados I: Arrays, Listas, Filas e Pilhas
+
+- [ ] 36-1: _Arquitetura de Computadores_
+- [ ] 36-2: _Arrays_
+- [ ] 36-3: _Nó e Listas Encadeadas_
+- [ ] 36-3: _Pilhas e Filas_
+
+##### Bloco 37: Estrutura de Dados II: Hashmap e Set
+
+- [ ] 37-1: _Hashmap e Dict_
+- [ ] 37-2: _Set_
+
