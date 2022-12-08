@@ -1,0 +1,25 @@
+Bora fixar os aprendizados sobre dicts?💪
+
+Utilizando o código abaixo, faça os exercícios 8 e 9:
+
+info = {
+  "personagem": "Margarida",
+  "origem": "Pato Donald",
+  "nota": "Namorada do personagem principal nos quadrinhos do Pato Donald",
+}
+
+Exercício 8: Insira no objeto uma nova propriedade com o nome de chave “recorrente” e o valor “Sim”. Em seguida, imprima o objeto no console.
+
+R:
+
+    >>>info["recorrente"] = "Sim"
+    >>> info
+    {'personagem': 'Margarida', 'origem': 'Pato Donald', 'nota': 'Namorada do personagem principal nos quadrinhos do Pato Donald', 'recorrente': 'Sim'}
+
+Exercício 9: Remova a propriedade cuja chave é “origem” e imprima o objeto no console.
+
+R:
+
+    >>> del info["origem"]
+    >>> info
+    {'personagem': 'Margarida', 'nota': 'Namorada do personagem principal nos quadrinhos do Pato Donald', 'recorrente': 'Sim'}
