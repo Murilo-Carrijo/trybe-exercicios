@@ -34,6 +34,9 @@ Vamos juntar tudo o que aprendemos até aqui e exercitar mais ainda nosso aprend
 
 7 - 🚀 Verifique na sua lista de contêiners qual contêiner se refere ao exercício que acabou de praticar.
 
+    R: docker ps -a (retorna todos os containers rodados na maquina)
+    718e8ae5962e   debian:stable-slim      "bash"                   4 minutes ago   Exited (0) About a minute ago             cool_austin
+
 8 - 🚀 Inicie o mesmo contêiner novamente, sem criar outro. Valide se ele está ativo na lista de contêiners.
 
 9 - 🚀 Retome o contêiner que foi criado anteriormente neste exercício.
