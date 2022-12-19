@@ -1,0 +1,65 @@
+Vamos juntar tudo o que aprendemos até aqui e exercitar mais ainda nosso aprendizado!
+
+1 - 🚀 No Docker Hub, utilizando a caixa de busca ("Search for great content"), busque pela imagem da Distribuição Linux Debian.
+
+    R: https://hub.docker.com/_/debian
+
+2 - 🚀 Uma vez que encontrar a imagem oficial, acesse-a (clicando em seu card) e verifique na página de detalhes. Confira se existe algum comando para baixar a imagem localmente sem ter que criar um contêiner para isso.
+
+    R: no canto superior direito temos o comando 'docker pull debian' de nos permite baixar a imagem do debian.
+
+3 - 🚀 Baixe a imagem utilizando a tag: stable-slim, que é uma versão reduzida da distribuição.
+
+    R: acessando as tags podemos buscar pela imagem stable-slim e teremos o seguinte comoando disponivel para realizar o download da imagem: docker pull debian:stable-slim
+
+4 - 🚀 Após baixar a imagem para seu computador local, crie e execute um contêiner no modo interativo utilizando essa imagem como referência — não esqueça referenciar a tag.
+    R: docker container run -it debian:stable-slim
+
+5 - 🚀 No terminal, você deve conseguir rodar o comando cat /etc/*-release, que vai retornar os dados da distribuição Debian que está sendo rodada dentro do contêiner.
+
+    R: retorno - 
+        PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+        NAME="Debian GNU/Linux"
+        VERSION_ID="11"
+        VERSION="11 (bullseye)"
+        VERSION_CODENAME=bullseye
+        ID=debian
+        HOME_URL="https://www.debian.org/"
+        SUPPORT_URL="https://www.debian.org/support"
+        BUG_REPORT_URL="https://bugs.debian.org/"
+
+6 - 🚀 Encerre o terminal.
+
+    R: exit
+
+7 - 🚀 Verifique na sua lista de contêiners qual contêiner se refere ao exercício que acabou de praticar.
+
+    R: docker ps -a (retorna todos os containers rodados na maquina)
+    718e8ae5962e   debian:stable-slim      "bash"                   4 minutes ago   Exited (0) About a minute ago             cool_austin
+
+8 - 🚀 Inicie o mesmo contêiner novamente, sem criar outro. Valide se ele está ativo na lista de contêiners.
+
+    R: docker start cool_austin
+    718e8ae5962e   debian:stable-slim   "bash"    7 minutes ago   Up 8 seconds             cool_austin
+
+9 - 🚀 Retome o contêiner que foi criado anteriormente neste exercício.
+
+    R: docker attach cool_austin
+
+10 - 🚀 Rode o comando cat /etc/debian_version que deve retornar a versão atual do sistema do contêiner.
+
+    R: retorno - 11.5
+
+11 - 🚀 Encerre o terminal.
+
+    R: exit
+
+12 - 🚀 Remova somente o contêiner criado para esse exercício.
+
+    R: docker container rm cool_austin
+
+13 - [BÔNUS] Crie e rode de modo interativo em modo ‘Cleanup’, a imagem andrius/ascii-patrol.
+
+    R: docker run -it --rm andrius/ascii-patrol,
+
+14 - [BÔNUS] **Encerre o contêiner utilizando os botões [ctrl] + [c].
