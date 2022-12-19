@@ -27,8 +27,10 @@ Vamos juntar tudo o que aprendemos até aqui e exercitar mais ainda nosso aprend
         HOME_URL="https://www.debian.org/"
         SUPPORT_URL="https://www.debian.org/support"
         BUG_REPORT_URL="https://bugs.debian.org/"
-        
+
 6 - 🚀 Encerre o terminal.
+
+    R: exit
 
 7 - 🚀 Verifique na sua lista de contêiners qual contêiner se refere ao exercício que acabou de praticar.
 
