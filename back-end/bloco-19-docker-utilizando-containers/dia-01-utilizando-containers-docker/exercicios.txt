@@ -56,6 +56,7 @@ Vamos juntar tudo o que aprendemos até aqui e exercitar mais ainda nosso aprend
 
 12 - 🚀 Remova somente o contêiner criado para esse exercício.
 
+    R: docker container rm cool_austin
 13 - [BÔNUS] Crie e rode de modo interativo em modo ‘Cleanup’, a imagem andrius/ascii-patrol.
 
 14 - [BÔNUS] **Encerre o contêiner utilizando os botões [ctrl] + [c].
