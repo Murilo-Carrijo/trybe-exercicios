@@ -39,6 +39,9 @@ Vamos juntar tudo o que aprendemos até aqui e exercitar mais ainda nosso aprend
 
 8 - 🚀 Inicie o mesmo contêiner novamente, sem criar outro. Valide se ele está ativo na lista de contêiners.
 
+    R: docker start cool_austin
+    718e8ae5962e   debian:stable-slim   "bash"    7 minutes ago   Up 8 seconds             cool_austin
+
 9 - 🚀 Retome o contêiner que foi criado anteriormente neste exercício.
 
 10 - 🚀 Rode o comando cat /etc/debian_version que deve retornar a versão atual do sistema do contêiner.
